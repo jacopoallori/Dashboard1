@@ -18,10 +18,15 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { Pagina1Component } from './components/pagina1/pagina1.component';
-import { Pagina2Component } from './components/pagina2/pagina2.component';
-import { Pagina3Component } from './components/pagina3/pagina3.component';
-
+import { HomeComponent } from './components/home/home.component';
+import { TodolistComponent } from './components/todolist/todolist.component';
+import { NewsComponent } from './components/news/news.component';
+import { WeatherComponent } from './components/weather/weather.component';
+import { MapsComponent } from './components/maps/maps.component';
+import { CalendarComponent } from './components/calendar/calendar.component';
+import { MessageComponent } from './components/message/message.component';
+import { CallLogComponent } from './components/call-log/call-log.component';
+import { AddressBookComponent } from './components/address-book/address-book.component';
 
 @NgModule({
   declarations: [
@@ -29,9 +34,15 @@ import { Pagina3Component } from './components/pagina3/pagina3.component';
     LoginComponent,
     RegisterComponent,
     DashboardComponent,
-    Pagina1Component,
-    Pagina2Component,
-    Pagina3Component,
+    HomeComponent,
+    TodolistComponent,
+    NewsComponent,
+    WeatherComponent,
+    MapsComponent,
+    CalendarComponent,
+    MessageComponent,
+    CallLogComponent,
+    AddressBookComponent
   ],
   imports: [
     BrowserModule,

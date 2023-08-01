@@ -1,33 +1,47 @@
-<mat-drawer-container class="example-container">
+<mat-drawer-container class="container" >
     <mat-drawer mode="side" opened>
         <mat-list role="list">
-            <mat-list-item role="listitem" routerLink="pagina1" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" ngClass="{padding:50px}"></mat-icon> Home
+            <mat-list-item role="listitem" routerLink="Home" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home"></mat-icon> 
+                <span>Home</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina2" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="material-icons-outlined"></mat-icon> ToDoList
+            <mat-list-item role="listitem" routerLink="ToDolist" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="table_chart"></mat-icon> 
+                <span>ToDoList</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="material-icons-outlined"></mat-icon> News
+            <mat-list-item role="listitem" routerLink="News" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="newspaper"></mat-icon> 
+                <span>News</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="fa-rainbow"></mat-icon> Meteo
+            <mat-list-item role="listitem" routerLink="Weather" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="wb_sunny"></mat-icon> 
+                <span>Meteo</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="navigation"></mat-icon> Maps
+            <mat-list-item role="listitem" routerLink="Maps" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="navigation"></mat-icon> 
+                <span>Maps</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="material-icons-outlined"></mat-icon> Calendario
+            <mat-list-item role="listitem" routerLink="Calendar" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="calendar_today"></mat-icon> 
+                <span>Calendario</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="material-icons-outlined"></mat-icon> Rubrica
+            <mat-list-item role="listitem" routerLink="Rubrica" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="contact_phone"></mat-icon> 
+                <span>Rubrica</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="material-icons-outlined"></mat-icon> Registro contatti
+            <mat-list-item role="listitem" routerLink="RegistroChiamate" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="settings_phone"></mat-icon>
+                <span>Registro contatti</span>
             </mat-list-item>
-            <mat-list-item role="listitem" routerLink="pagina3" [routerLinkActive]="'active'">
-                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="material-icons-outlined"></mat-icon> Messaggi
+            <mat-list-item role="listitem" routerLink="Message" [routerLinkActive]="'active'">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="message"></mat-icon> 
+                <span>Messaggi</span>
             </mat-list-item>
+            <mat-list-item role="listitem" routerLink="pagina1" [routerLinkActive]="'active'" style="display: flex; align-items: center; justify-content: center;">
+                <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="home" style="margin-right: 10px;"></mat-icon> 
+                <span>Home</span>
+              </mat-list-item>
+              
         </mat-list>       
     </mat-drawer>
 
