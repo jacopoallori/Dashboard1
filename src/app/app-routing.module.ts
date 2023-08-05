@@ -17,7 +17,9 @@ import { CallLogComponent } from './components/call-log/call-log.component';
 import { AuthGuard } from './auth/auth.guard';
 
 const routes: Routes = [
-  {path: '', component: DashboardComponent,canActivate: [AuthGuard], children:[
+  {path: '', component: DashboardComponent,
+  // canActivate: [AuthGuard], 
+  children:[
     {path: '', redirectTo: 'Home', pathMatch: 'full'},
     {path: 'Home', component: HomeComponent},
     {path: 'ToDolist', component: TodolistComponent},    

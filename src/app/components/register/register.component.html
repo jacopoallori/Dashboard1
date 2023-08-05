@@ -1,13 +1,15 @@
-<h1>REGISTER:</h1>
-<form #registerForm="ngForm" (ngSubmit)="onSubmit(registerForm)">
+<h1>Registrazione:</h1>
+<form [formGroup]="registerForm" (ngSubmit)="onRegister(registerForm)">
     <mat-form-field appearance="fill">
-        <mat-label>Input</mat-label>
-        <input matInput type="email" name="email" required ngModel>
+        <mat-label>Inserisci la tua Email:</mat-label>
+        <input matInput type="email" name="email" placeholder="Email" formControlName="email">
     </mat-form-field>
+    <p *ngIf="!registerForm.get('email')?.valid && registerForm.get('email')?.touched">Inserisci una mail valida!</p>
     <mat-form-field appearance="fill">
-        <mat-label>Input</mat-label>
-        <input matInput type="password" name="password" required ngModel>
+        <mat-label>Inserisci una password</mat-label>
+        <input matInput type="password" name="password" placeholder="Password" formControlName="password">
     </mat-form-field>
-    <button mat-raised-button color="primary" type="submit" [disabled]="!registerForm.valid">Primary</button>
+    <mat-icon aria-hidden="false" aria-label="Example home icon" fontIcon="info" id="info"></mat-icon> 
+    <p *ngIf="!registerForm.get('password')?.valid && registerForm.get('password')?.touched">Inserisci una password valida!</p>
+    <button mat-raised-button color="primary" type="submit" [disabled]="!registerForm.valid">Registrati</button>
 </form>
-  
