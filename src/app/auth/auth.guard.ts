@@ -17,8 +17,28 @@ export class AuthGuard implements CanActivate{
     if(this.authService.isLoggedIn){
       return true;
     }else{
-      this.router.navigate(['/login'])
+      alert("Per navigare in questa sezione devi effettuare il Login")
+      //this.router.navigate(['/login'])
       return false; 
     }
+  }
+
+  isLogged(){
+    // //*todo
+    // // Giusto gestire questa cosa qui? 
+    // // C'è un modo migliore ?
+    // //Controllo se l'utente è gia loggato e sopratutto se il token è ancora valido
+    // const user  = localStorage.getItem('user');
+    //   if(user){
+    //     this.datiUtenti  = JSON.parse(user);
+    //     if(new Date() < new Date(this.datiUtenti._expirationdate)){
+    //       console.log("Utente gia loggato con token valido");
+    //       this.authService.isLoggedIn = true;
+    //     }else{
+    //       console.log("Utente non loggatoo");
+    //       this.authService.isLoggedIn = false;
+    //       localStorage.removeItem('user');
+    //     }
+    //   }      
   }
 }
